@@ -89,6 +89,7 @@ float checkHum = 0;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Water Temperature sensor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #define ONE_WIRE_BUS 7
+#define TEMPERATURE_PRECISION 9
 OneWire oneWire(ONE_WIRE_BUS);          // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 DallasTemperature sensors(&oneWire);    // Pass our oneWire reference to Dallas Temperature.
 
@@ -133,6 +134,10 @@ void setup()
   last = encoder->getValue();                 // last rotery encoder Value
 
   sensors.requestTemperatures();
+    // set the resolution to 9 bit per device
+  sensors.setResolution(0, TEMPERATURE_PRECISION);
+  sensors.setResolution(1, TEMPERATURE_PRECISION);
+  sensors.setResolution(2, TEMPERATURE_PRECISION); 
 
   wdt_enable(WDTO_1S);                        // enable watchdog and wait 1 seconds before reset
 

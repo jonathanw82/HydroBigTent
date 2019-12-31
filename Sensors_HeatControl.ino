@@ -36,7 +36,7 @@ void HeatMatControl ()
       digitalWrite(HeatMat, HIGH);
       HeatPadTempSwing = 1;
     }
-    if (sensors.getTempCByIndex(1) < heatPadTemp - (1.00) && HeatPadTempSwing == 1) {
+    if (sensors.getTempCByIndex(1) < heatPadTemp - 1.00 && HeatPadTempSwing == 1) {
       HeatPadTempSwing = 0;
     }
     // temp swing is used so that when the water temperature exceeds the heatpadtemp max temp
