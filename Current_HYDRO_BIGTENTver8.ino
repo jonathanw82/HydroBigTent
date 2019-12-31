@@ -20,8 +20,6 @@ unsigned long currentTime;
 unsigned long previousTime = 0;
 unsigned long currentsensorTime;
 unsigned long previoussensorTime = 0;
-unsigned long currentDebugTime;
-unsigned long previousDebugTime = 0;
 
 int marker = 0;
 char dateBuffer [12];             // storeing time date string
@@ -200,6 +198,6 @@ void loop()
 
   currentTime = millis();
   currentsensorTime = millis();
-  currentDebugTime = millis();
+
 
 }
