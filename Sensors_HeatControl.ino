@@ -12,7 +12,7 @@ void Sensors() {
 
   if (menuEntered == 1) {}                                                              // if the Setup is open disable reading water sensor
   else {
-    if (currentsensorTime - previoussensorTime > 10000 && menuEntered == 0)             // checking water temp every 10 seconds if the setup menu is not active.
+    if (currentsensorTime - previoussensorTime > 2000 && menuEntered == 0)             // checking water temp every 10 seconds if the setup menu is not active.
     {
       previoussensorTime = currentsensorTime;
       TempCheck = 1;

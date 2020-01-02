@@ -133,9 +133,9 @@ void setup()
 
   last = encoder->getValue();                 // last rotery encoder Value
 
-  sensors.requestTemperatures();
-    // set the resolution to 9 bit per device
-  sensors.setResolution(0, TEMPERATURE_PRECISION);
+  sensors.requestTemperatures();              // request the first water temp data
+    
+  sensors.setResolution(0, TEMPERATURE_PRECISION);      // set the resolution to 9 bit per device
   sensors.setResolution(1, TEMPERATURE_PRECISION);
   sensors.setResolution(2, TEMPERATURE_PRECISION); 
 
