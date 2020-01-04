@@ -78,7 +78,7 @@ void Display() {
         lcd.print(F("Temp BigTank"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(sensors.getTempCByIndex(0));           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater1);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }
@@ -91,7 +91,7 @@ void Display() {
         lcd.print(F("Temp Tank 2"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(sensors.getTempCByIndex(1));           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater2);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }
@@ -103,7 +103,7 @@ void Display() {
         lcd.print(F("Temp Tank 3"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(sensors.getTempCByIndex(2));           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater3);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }

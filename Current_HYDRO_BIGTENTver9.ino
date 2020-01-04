@@ -20,8 +20,8 @@ unsigned long currentTime;
 unsigned long previousTime = 0;
 unsigned long currentsensorTime;
 unsigned long previoussensorTime = 0;
-unsigned long currentDebugTime;
-unsigned long previousDebugTime = 0;
+unsigned long currentWaterTime;
+unsigned long previousWaterTime =0;
 
 int marker = 0;
 char dateBuffer [12];             // storeing time date string
@@ -48,7 +48,7 @@ unsigned long NFTrunInterval = 0;
 float heatPadTemp = 0;
 int HeatPadStatus = 0;
 float HeatPadTempSwing = 0;
-int TempCheck = 0;
+float HeatPadTempSensor = 0;
 
 int menuitem = 1;
 int page = 1;
@@ -91,9 +91,12 @@ float checkHum = 0;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Water Temperature sensor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #define ONE_WIRE_BUS 7
+#define TEMPERATURE_PRECISION 9
 OneWire oneWire(ONE_WIRE_BUS);          // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 DallasTemperature sensors(&oneWire);    // Pass our oneWire reference to Dallas Temperature.
-
+float SensorWater1 = 0;
+float SensorWater2 = 0;
+float SensorWater3 = 0;
 //########################################################################## SETUP ##############################################################################
 void setup()
 {
@@ -134,7 +137,11 @@ void setup()
 
   last = encoder->getValue();                 // last rotery encoder Value
 
-  sensors.requestTemperatures();
+  sensors.requestTemperatures();              // request the first water temp data
+    
+  sensors.setResolution(0, TEMPERATURE_PRECISION);      // set the resolution to 9 bit per device
+  sensors.setResolution(1, TEMPERATURE_PRECISION);
+  sensors.setResolution(2, TEMPERATURE_PRECISION); 
 
   wdt_enable(WDTO_1S);                        // enable watchdog and wait 1 seconds before reset
 
@@ -155,7 +162,8 @@ void loop()
 {
   wdt_reset();                           // Reset Watchdog and reset processor if crashed or inactive
   DailyReset();
-  Reset();
+  Reset(); 
+  Sensors();
   LightingTime();
   VEGLightingTime();
   WaterPump();
@@ -164,7 +172,6 @@ void loop()
   EncoderRotation();
   timerIsr();
   Display();
-  Sensors();
   HeatMatControl();
   Debug();
 
@@ -200,6 +207,7 @@ void loop()
 
   currentTime = millis();
   currentsensorTime = millis();
-  currentDebugTime = millis();
+  currentWaterTime = millis();
+
 
 }

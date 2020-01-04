@@ -39,6 +39,6 @@ void StartUp(){
   lcd.setCursor(1, 0);
   lcd.print(F(" Software Ver"));
   lcd.setCursor(0, 1);
-  lcd.print(F("  BigTent Ver8 "));
+  lcd.print(F("  BigTent Ver9 "));
   delay(800);
 }
