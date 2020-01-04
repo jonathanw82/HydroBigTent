@@ -46,7 +46,7 @@ unsigned long NFTrunInterval = 0;
 float heatPadTemp = 0;
 int HeatPadStatus = 0;
 float HeatPadTempSwing = 0;
-int TempCheck = 0;
+float HeatPadTempSensor = 0;
 
 int menuitem = 1;
 int page = 1;
@@ -158,7 +158,8 @@ void loop()
 {
   wdt_reset();                           // Reset Watchdog and reset processor if crashed or inactive
   DailyReset();
-  Reset();
+  Reset(); 
+  Sensors();
   LightingTime();
   VEGLightingTime();
   WaterPump();
@@ -167,7 +168,6 @@ void loop()
   EncoderRotation();
   timerIsr();
   Display();
-  Sensors();
   HeatMatControl();
   Debug();
 
