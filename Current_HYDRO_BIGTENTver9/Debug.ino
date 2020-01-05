@@ -36,5 +36,5 @@ void Debug(){
   //  Serial.print(F(" Checking Water Temp small Tank = "));
   //  Serial.print(sensors.getTempCByIndex(0));
   //  Serial.print(F(" Checking Water Tank 3 = "));
-  //  Serial.print(sensors.getTempCByIndex(2));
+  //  Serial.println(SensorWater2TrueRead);
 }

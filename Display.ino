@@ -29,15 +29,15 @@ void Display() {
         lcd.print(F("Time & Date"));
         lcd.setCursor(0, 1);
         if (DaylightSaving == 1) {
-          if (now.hour() == 00){
+          if (now.hour() == 00) {
             lcd.print("00");
             lcd.print(F(":"));
             lcd.print(now.minute());
             lcd.print(F(" "));
           }
-          else{
-          sprintf(dateBuffer, "%02u:%02u ", now.hour() - 1, now.minute());
-          lcd.print(dateBuffer);
+          else {
+            sprintf(dateBuffer, "%02u:%02u ", now.hour() - 1, now.minute());
+            lcd.print(dateBuffer);
           }
         }
         if (DaylightSaving == 0) {
@@ -86,7 +86,7 @@ void Display() {
         lcd.print(F("Temp BigTank"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(SensorWater1);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater1TrueRead);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }
@@ -99,11 +99,11 @@ void Display() {
         lcd.print(F("Temp Tank 2"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(SensorWater2);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater2TrueRead);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }
-       if (currentTime - previousTime >= 4000 && marker == 5)
+      if (currentTime - previousTime >= 4000 && marker == 5)
       {
         previousTime = currentTime;
         lcd.clear();
@@ -111,7 +111,7 @@ void Display() {
         lcd.print(F("Temp Tank 3"));
         lcd.setCursor(0, 1);
         lcd.print(F("C="));
-        lcd.print(SensorWater3);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
+        lcd.print(SensorWater3TrueRead);           // Why "byIndex"? You can have more than one IC on the same bus 0 refers to the first IC on the wire
 
         marker = marker + 1;
       }
@@ -132,7 +132,7 @@ void Display() {
         marker = marker + 1;
       }
 
-     
+
       //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Light Cycle ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 5 Screen
 
       if (currentTime - previousTime >= 2000 && marker == 7)

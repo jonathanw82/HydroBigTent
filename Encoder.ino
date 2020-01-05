@@ -5,14 +5,14 @@ void readRotaryEncoder()
 
     value += encoder->getValue();
 
-    if (value / 2 > last) {
-      last = value / 2;
+    if (value / 4 > last) {
+      last = value / 4;
       down = true;
       if (currentTime - previousTime >= 50) {
         previousTime = currentTime;
       }
-    } else   if (value / 2 < last) {
-      last = value / 2;
+    } else   if (value / 4 < last) {
+      last = value / 4;
       up = true;
       if (currentTime - previousTime >= 50) {
         previousTime = currentTime;

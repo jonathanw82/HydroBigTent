@@ -97,6 +97,9 @@ DallasTemperature sensors(&oneWire);    // Pass our oneWire reference to Dallas 
 float SensorWater1 = 0;
 float SensorWater2 = 0;
 float SensorWater3 = 0;
+float SensorWater1TrueRead = 0;
+float SensorWater2TrueRead = 0;
+float SensorWater3TrueRead = 0;
 
 //########################################################################## SETUP ##############################################################################
 void setup()
