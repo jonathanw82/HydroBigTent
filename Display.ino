@@ -33,6 +33,7 @@ void Display() {
             lcd.print("00");
             lcd.print(F(":"));
             lcd.print(now.minute());
+            lcd.print(F(" "));
           }
           else{
           sprintf(dateBuffer, "%02u:%02u ", now.hour() - 1, now.minute());
