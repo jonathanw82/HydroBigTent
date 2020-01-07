@@ -16,6 +16,7 @@ void Sensors() {
     {
       previoussensorTime = currentsensorTime;
       sensors.requestTemperatures();
+
    //   Serial.println("REQUESTING TEMP##################");
     }
     if (currentWaterTime - previousWaterTime > 1000)          // Request Temperatures every 1 seconds
@@ -38,12 +39,13 @@ void Sensors() {
     else{
       SensorWater3TrueRead = SensorWater3;
     }
+    }  
   }
-}
 void HeatMatControl ()
 {
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Water Temp & Heat Mat control ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   HeatPadStatus = digitalRead(HeatMat);
+
 
   if (SensorWater2TrueRead < heatPadTemp && HeatPadTempSwing == 0) {     // heat mat on
     digitalWrite(HeatMat, LOW);
