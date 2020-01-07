@@ -23,7 +23,6 @@ unsigned long previoussensorTime = 0;
 unsigned long currentWaterTime;
 unsigned long previousWaterTime =0;
 
-
 int marker = 0;
 char dateBuffer [12];             // storeing time date string
 
@@ -95,7 +94,6 @@ float checkHum = 0;
 #define TEMPERATURE_PRECISION 9
 OneWire oneWire(ONE_WIRE_BUS);          // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 DallasTemperature sensors(&oneWire);    // Pass our oneWire reference to Dallas Temperature.
-
 float SensorWater1 = 0;
 float SensorWater2 = 0;
 float SensorWater3 = 0;
@@ -186,6 +184,7 @@ void loop()
   NFTDelayPause = NFTDelay * 60000;
   NFTrunInterval = NFTrunTime * 60000;
 
+
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ OUTPUT REAL TIME CLOCK ON SERIAL ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   DateTime now = rtc.now();
@@ -213,4 +212,6 @@ void loop()
   currentTime = millis();
   currentsensorTime = millis();
   currentWaterTime = millis();
+
+
 }
