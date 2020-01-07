@@ -16,6 +16,7 @@ void Sensors() {
     {
       previoussensorTime = currentsensorTime;
       sensors.requestTemperatures();
+
    //   Serial.println("REQUESTING TEMP##################");
     }
     if (currentWaterTime - previousWaterTime > 1000)          // Request Temperatures every 1 seconds
@@ -38,12 +39,14 @@ void Sensors() {
     else{
       SensorWater3TrueRead = SensorWater3;
     }
+    }  
   }
 }
 void HeatMatControl ()
 {
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Water Temp & Heat Mat control ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   HeatPadStatus = digitalRead(HeatMat);
+
 
   if (SensorWater2TrueRead < heatPadTemp && HeatPadTempSwing == 0) {     // heat mat on
     digitalWrite(HeatMat, LOW);
@@ -57,3 +60,20 @@ void HeatMatControl ()
   }
                                                                                   // temp swing is used so that when the water temperature exceeds the heatpadtemp max temp
 }                                                                                 // the water temp has to drop back past the maxtemp by 1 degree before it can turn back on to stop on/off occilations!
+
+  HeatPadTempSensor = sensors.getTempCByIndex(1);
+                                                                           
+    if (HeatPadTempSensor < heatPadTemp && HeatPadTempSwing == 0) {     // heat mat on   
+      digitalWrite(HeatMat, LOW);
+    }
+    else if (HeatPadTempSensor > heatPadTemp) {    // heat mat off
+      digitalWrite(HeatMat, HIGH);
+      HeatPadTempSwing = 1;
+    }
+    if (HeatPadTempSensor < heatPadTemp - 1.00 && HeatPadTempSwing == 1) {
+      HeatPadTempSwing = 0;
+    }
+                                                                                    // temp swing is used so that when the water temperature exceeds the heatpadtemp max temp
+  }                                                                                 // the water temp has to drop back past the maxtemp by 1 degree before it can turn back on to stop on/off occilations!
+
+
