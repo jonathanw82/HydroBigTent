@@ -2,7 +2,7 @@
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro1.jpg" alt="Hydro image"/>
  </h1>
  
-
+#### Hydroponics
 I created this Hydropoincs system out of my love of mixing technology with nature, the ability to harness the the building blocks of life to create tasty food in my dining room. This project is a work in progress but i am proud of the evolution of it.
 
 
@@ -23,7 +23,7 @@ The heart of the system is an arduino Uno, connected to a real-time clock module
 During the creation of the system I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles.
 The incorporation of a menu system and using EEprom to save settings was also implemented at this time. 
 
-When I first created the system, I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intencity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
+When I first created the system, I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intensity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
  
  ## Features:
 * Rotery encoder for navigation
@@ -81,7 +81,7 @@ During day to day running the lcd display scrolls through a few screen of data i
 * Light Cycle for the 240v led bulbs
 
 ### Setup program flow:
-On pressing the rotery encoder center button
+On pressing the rotary encoder centre button
 * Lighting time 240v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
 * Lighting time 12v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
 * Watering duration, on click will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
@@ -95,14 +95,14 @@ On pressing the rotery encoder center button
 
 
 ## Lighting
-The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive but there was to many chips in close succession so I had to add a fan, most of the early fans I used where really loud or vibrated to much so I added a noise blocker fan as they produce  178.3 m3 /h @28.5db so it was a good compromise.  
+The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive but there was to many chips in close succession so I had to add a fan, most of the early fans I used where really loud or vibrated to much so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.  
 
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="45%"/> </div>
 
 
 
-The lighting panel was made up of a piece of aluminuim from the lid of a 2p pusher control box with an old  has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight. 
+The lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with an old  has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight.  
 
 
 
@@ -114,9 +114,10 @@ The lighting panel was made up of a piece of aluminuim from the lid of a 2p push
  </div>
 
 
-After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
 I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better 3 year son I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
+
 
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195337.jpg" alt="240v lights image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195402.jpg" alt="240v lights image" width="45%"/> </div>
@@ -124,9 +125,12 @@ I created a second lighting fixture as I needed more light but was unable to get
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195506.jpg" alt="peppers image" width="45%"/> </div>
 
 ## Air Extraction:
-I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project.  I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
+I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
 
-I could have used the arduino on a PWM channel with a solidstate realy to regualte the fan speed but I was running out of space on the eerprom as it was.
+I could have used the arduino on a PWM channel with a solid state relay to regulate the fan speed but I was running out of space on the eerprom as it was.
+
+## Air Pumps
+During the early stages I tried multiple types of systems from deep water culture to NFT and in the end settles for deep water culture, I was originally using a really small air pump and for a while noticed that the plants were lagging in something especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on head so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
 
 
 ### Nice to have: 
@@ -143,9 +147,8 @@ These features may be included in future releases of this application.
 
 
 ### Credits:
+I would like to thank my firend Cersnic Tebor for his help with this project.
 
-
-[Back_to_top](#h1)
 
 ##### Media:
 
@@ -154,3 +157,5 @@ https://thegreensunshineco.com/think-beyond-white-led-and-bulb-grow-lights-kelvi
 
 Image of Full spectrum wave length
 https://futureeden.co.uk/
+
+[Back_to_top](#Hydroponics)
