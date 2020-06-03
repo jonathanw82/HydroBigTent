@@ -20,6 +20,21 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill
 
 
+## Parts:
+* 1x Arduino Uno (Rev3) [here](https://store.arduino.cc/arduino-uno-rev3)
+* 1x RHT03 Humidity Temp Sensor [here](https://www.banggood.com/AM2302-DHT22-Temperature-And-Humidity-Sensor-Module-p-937403.html?gpla=1&gmcCountry=GB&currency=GBP&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=lijing&utm_campaign=ssc-gb-all-bf11-re0323&gclid=EAIaIQobChMIgtuKq_Xl6QIVQuDtCh2hkg53EAQYBSABEgL3-PD_BwE&cur_warehouse=UK)
+* 3x DS18B20 Water temp sensors [here](https://www.cricklewoodelectronics.com/Waterproof-Digital-Temperature-Probe-for-Arduino-DS18B20.html) Unfortunatly there are not the ones in use currently.
+* 1x KY-040 Rotery Encoder [here](https://www.cricklewoodelectronics.com/Rotary-encoder-module-for-Arduino-KY-040.html?gclid=EAIaIQobChMIybWK-_Pl6QIVS7DtCh2XhAvKEAQYAyABEgKdBPD_BwE) 
+* 1x Lcd 1602i2c Display [here](https://create.arduino.cc/projecthub/Oniichan_is_ded/lcd-i2c-tutorial-664e5a)
+* 1x Real Time clock Modual [here](https://uk.banggood.com/DS3231-AT24C32-IIC-Precision-RTC-Real-Time-Clock-Memory-Module-p-1547989.html?gpla=1&gmcCountry=GB&currency=GBP&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgcs&utm_content=lijing&utm_campaign=ssc-gbg-summersale-all&utm_design=152&ad_id=358675083520&gclid=EAIaIQobChMItpGz1Pbl6QIVAWHmCh00lAPXEAQYEyABEgIt2_D_BwE&cur_warehouse=CN)
+* 1x 4 channel realy [here](https://cpc.farnell.com/velleman-kit/vma400/4-channel-relay-module-for-arduino/dp/SC14419?mckv=sA419NTjI_dc|pcrid|224679642167|kword||match||plid||slid||product|SC14419|pgrid|47129782516|ptaid|pla-371255952663|&CMP=KNC-GUK-CPC-SHOPPING&gclid=EAIaIQobChMIssm7n_fl6QIVj-vtCh0o4Af9EAQYBSABEgLoQPD_BwE)
+* 1x Contactor CUC20 [here](https://www.screwfix.com/p/british-general-20a-dp-contactor/6654p?_requestid=594347)
+* 1x 5v 30amp Relay [here](https://robotdyn.com/relay-module-1-relay-5v-30a.html)
+* 1x 240v to 110v Auto Transformer
+* 1x S-150-12 Switch mode power supply [here](https://uk.rs-online.com/web/p/embedded-switch-mode-power-supplies-smps/6210663?cm_mmc=UK-PLA-DS3A-_-google-_-PLA_UK_EN_Power_Supplies_%26_Transformers_Whoop-_-Embedded+Switch+Mode+Power+Supplies+(SMPS)_Whoop-_-6210663&matchtype=&pla-475399700067&gclid=EAIaIQobChMIk967q_rl6QIVjO7tCh3r8AJ4EAQYASABEgLKf_D_BwE&gclsrc=aw.ds)
+* 1x RD-65A Switch mode power supply [here](https://uk.rs-online.com/web/p/embedded-switch-mode-power-supplies-smps/6447102/?relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B2426706F3D31333326736E3D592673723D2673743D4B4559574F52445F53494E474C455F414C5048415F4E554D455249432673633D592677633D4E4F4E45267573743D72642D363561267374613D72642D36356126&searchHistory=%7B%22enabled%22%3Atrue%7D)
+
+
 ## Features:
 * Rotery encoder for navigation
 * Lcd display for easy and real time data
@@ -31,68 +46,17 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Quiet air pump
 
 
-#### Home
-The Home page consists of a navigation bar across the top with logo on the left and call to action buttons on the right, the hero image and some text about the 
-apairy and an image of the beekeeper. Below that are cards with the poducts avilabale to purchase.
-In the footer there is the slogan to the left, copyright in the middle and social media icons to the right.
-
-#### Product Info Page
-Same navigation as before, product image to the left with title, description, price, quantity selector and 3 call to action buttons add to cart back and if any items are in the cart a cart button for ease of access to the cart
-Below is a "what our customers say" header and a create review call to action button. Below that all the reviews for that particulr product are displayed. A button will appear to edit, delete if the logged in user created the review.
-
-#### The Shopping Cart 
-Same navigation as before, with image to the left, product name, item price, quantity selector, 2 buttons update and remove and subtotal.
-Below to the right sub total, grand total, 2 call to action buttons keep browsing and secure checkout. Keep browsing will return the user to the home page, secure checkout takes the user to the checkout.
-
-#### The Checkout
-Same navigation as before, with customer detail form to the left, with stripe payment modual at the bottom with 2 call to action buttons, Adjust cart returns the user to the cart
-and complete order submits the form and payment.
-
-#### The Order Complete Page
-Same navigation as before, when the order is complete a page saying thank you for your order is displayed with the order summery and to the bottom a link to the beekeepers blog.
-
-#### Blog Page 
-Same navigation as before, title header across the top centre with a call to action button below to create blogs which is only available to the superuser. Below are the blog posts with
-image at the top, title below, then amount of views, with 2 call to action buttons whicch are read more and, if you are the super user, delete.
-
-#### Blog Readmore
-Same navigation as before, Image left, title of the blog to the right, number of views below and 2 call to action buttons which are back to blog and, if superuser, edit blog button, with the blog contents below that.
-
-#### Edit Blog 
-Same navigation as before, blog post title across the top, with the form below that. 3 call to action buttons, one for adding an image, the second to save and the third is back which redirects to the blogposts page.
-
-#### Profile Page
-Same navigation as before, with a form to add address details with an update call to action button below. To the right is order history where the user can click on the order number to see that previous order.
-
-#### Order history
-Same navigation as before, when the order is clicked from the profile page, a page saying "order history" is displayed with the order summery and to the bottom a link to the beekeepers blog.
-
-#### Product Admin
-Product admin is only available to the superuser. Same navigation as before, with a create product button at the top center with a "to bottom" button next to it. Each prodct also has 2 buttons - update and delete. 
-
-
 ### Nice to have: 
 These features may be included in future releases of this application.
-* In future releases, put a limit on how many reviews a single user can put on a particular product.
-* Access so admin can moderate reviews with ability to delete them from the admin panel.
-* User blogs to share stories or ask for advice on keeping bees.
-* The ability to decide whether you want to actually delete a product after pressing the delete button.
-
-
-### Cross Browser Compatibility
-Tested on four Browsers
-* Chrome, No Errors works as intended.  
-* Opera, No Errors works as intended.
-* Firefox, The firefox browser struggled with css with pointer hover stuggling on the landing page. Some tables also struggle with positioning.  
-* Edge, The Edge browser did not like a lot of the css and the pointer hover caused strange movement in the user interface. Some forms and tables 
-do not render in the correct places, however the loading time was fast and smooth.
+* Digital Extraction fans
+* Higher power led lighting
+* Air conditioning
+* Water cooler
 
 
 ## Bugs & ongoing fixes
-* On the crispy forms image input I have yet to find a way to style the call to action buttons for uploading images. In the next release I will have styled these buttons.
-* The sign up form atomatically auto focuses on user name instead of email.
-* The product admin page on smaller screens is not quite as constrained as I would like. However it does not affect the usability of the page just the aesthetics.
-* Compatibilty is poor on 2 of the mainstream browers so css fixes will be made in future releases of the application.
+* The rotary encoder can be laggy and need quite q few revolutions to get get to where the user needs to be in the menu.
+* The water temp sensors are cheap and there output is erratic this can cause the heater mat relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future realeses I will get better quality sensors.
 
 
 
