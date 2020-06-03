@@ -3,54 +3,32 @@
  </h1>
  
 
-The Honey pot is a site for people passionate about high quality, natural products, who want to purchase environmentally freindly, organic and locally produced goods. I anticipate most people coming to the site for honey, with other interesting products available that link in to their interest in bees and the environment.
-
-The User has the ability to create, edit and delete their own reviews on products as well as find out what is happening on the apiary with the bees via blogs. 
-The Superuser is the only user that has full create update delete abilities with the products and blogs.
+I created this Hydropoincs system out of my love of mixing technology with nature, the ability to harness the the building blocks of life to create tasty food in my dining room. This project is a work in progress but i am proud of the evolution of it.
 
 
-#### The users goals of this website are:
-* Easy to navigate site that allows straightforward purchase of products 
-* Able to login to view and manage their profile and previous orders.
-* Read the blog to keep up to date with what the bees are doing
+#### The users goals of this application are:
+* An easy to navigate menu
+* Low power consumption
+* Zero landfill
+* Create great food fast
 
-#### The Admin goals of this website are:
-* Easy to navigate. 
-* Able to login.
-* View their product list.
-* Create new products.
-* View the produts.
-* Update the products.
-* Delete products.
-* Create, update & delete their blog posts to create customer engagement with the company to help drive repeat purchase
-
-#### The Business potentials of this website are:
-* Selling advertising space to businesses with bee related products.
-* Stock more products and training courses on beekeeping.
-
-
-#### This Website is the best way to help them achieve these things because:
-* Other websites are too cluttered and hard to navigate.
-* The user is able to create a login.
-* The user can see there profile.
-* The user can see their past order history.
-* The site owner/admin can create, update and delete products.
-* The site provides information and insight into the manufacture of products as well as selling them
-
-
-#### This website is:
-* Providing clear artwork and details of each product.
+#### I think this application gives this to the user because:
+* The rotery encoder is easy to use with one button click.
+* The dispplay cycles through cueenrt realtime data such as temperature and humidity.
+* The entire system only takes 210 watts max
+* The system can user multiple types of hydroponic platforms such as, Deep water Culture, Nutrient film technique, Ebb and flow etc
+* Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill
 
 
 ## Features:
-* Products to purchase through an ecommerse system
-* Ability for user to leave reviews on products
-* A blog for superuser to add things about how the bees are getting on.
-* Administration panel so superusers can add, edit, and delete products.
-* Profile page where user can see their order history. 
-* All pages have the same navigation bar with logo to the left that onclick, takes you home from any page. To the right are 3 call to action buttons - home, blog and if not logged in
-a login button, if logged in, the users name as a dropdown with accesss to profile and logout. If superuser, there is also an admin button. To the right of the dropdown
-there is the shopping basket. The icon changes depending on if any items are placed in the shopping cart. There is also a footer with slogan, copyright and social media icons.
+* Rotery encoder for navigation
+* Lcd display for easy and real time data
+* Realtime clock
+* Led lights
+* Silent running cooling fans
+* Large quiet extractor fan
+* Silent running circulation fans
+* Quiet air pump
 
 
 #### Home
