@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/hydro1.jpg" alt="Hydro image"/>
+   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro1.jpg" alt="Hydro image"/>
  </h1>
  
 
