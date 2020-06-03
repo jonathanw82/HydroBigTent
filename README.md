@@ -98,14 +98,14 @@ On pressing the rotary encoder centre button
 
 ## Lighting
 The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive but there was to many chips in close succession so I had to add a fan, most of the early fans I used where really loud or vibrated to much so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.  
-
+#
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="45%"/> </div>
 
 
 #
 The lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with an old  has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight.  
-
+#
 
 
 <div align="center">
@@ -119,7 +119,7 @@ The lighting panel was made up of a piece of aluminium from the lid of a 2p push
 After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
 I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better 3 year son I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
-
+#
 
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195337.jpg" alt="240v lights image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195402.jpg" alt="240v lights image" width="45%"/> </div>
