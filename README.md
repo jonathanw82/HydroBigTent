@@ -2,7 +2,7 @@
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro1.jpg" alt="Hydro image"/>
  </h1>
  
-#### Hydroponics
+## Hydroponics
 I created this Hydropoincs system out of my love of mixing technology with nature, the ability to harness the the building blocks of life to create tasty food in my dining room. This project is a work in progress but i am proud of the evolution of it.
 
 
@@ -31,7 +31,7 @@ When I first created the system, I originally used a compact florescent light bu
 * Realtime clock
 * Led lights
 * Silent running cooling fans
-* Large quiet extractor fan
+* Large quiet extractor fan [goto](#air-extraction)
 * Silent running circulation fans
 * Quiet air pump [goto](#air-pumps)
  
