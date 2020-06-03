@@ -33,7 +33,7 @@ When I first created the system, I originally used a compact florescent light bu
 * Silent running cooling fans
 * Large quiet extractor fan
 * Silent running circulation fans
-* Quiet air pump
+* Quiet air pump [goto](#air-pumps)
  
 <div align="center">
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro_schem.jpg" alt="wireing diagram"/></div>
