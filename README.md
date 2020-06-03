@@ -140,12 +140,12 @@ My weapons of choice when it comes to making nutrient solution:
 
 ## Nutrients:
 The nutrients that have become stapes in my grow room
-# Seedlings
+### Seedlings
 * Growth Technology Formulex [here](https://www.growthtechnology.com/product/formulex/)
 * Atami Rootbastic [here](https://grownuphydroponics.com/atami-rootbastic-explosive-root-growth-first-3-weeks-concentrated.html)
 * Atami Silic Boost [here](https://grownuphydroponics.com/b-cuzz-silic-boost-concentrated-silicon-atami.html)
 * Growth Technology Clonex [here](https://www.growthtechnology.com/product/clonex/)
-# Mature plants
+### Mature plants
 * Growth Technology Ionic Hydro Hard Water Grow [here](https://www.growthtechnology.com/product/ionic-hydro-hard-water-grow/)
 * Growth Technology Ionic Hydro Hard Water Bloom [here](https://www.growthtechnology.com/product/ionic-hydro-hard-water-bloom/)
 * Growth Technology Ionic Coco Grow [here](https://www.growthtechnology.com/product/ionic-for-coco-grow/)
@@ -158,9 +158,10 @@ The nutrients that have become stapes in my grow room
 * Silver Bullet Roots [here](https://www.growell.co.uk/pest-control-plant-health/disease-control/silver-bullet-roots.html)
 * CalMag [here](https://www.canna-uk.com/calmag-agent)
 * PH Down [here](https://www.growthtechnology.com/product/ph-down/)
-# Pests
+### Pests
 * Pyrethrum 5EC [here](https://www.pelgar.co.uk/product/pyrethrum-5-ec/)
 * SB Plant Invigorator [here](https://sbproducts.co.uk/)
+
 
 ## Nice to have: 
 These features may be included in future releases of this application.
