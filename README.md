@@ -24,6 +24,10 @@ During the creation of the system I have made it able to have 2 tents with 2 ind
 
 When i first created the system I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intencity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
  
+<div align="center">
+   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro_schem.jpg" alt="wireing diagram"/div>
+ 
+ 
 ## Parts:
 * 1x Arduino Uno (Rev3) [here](https://store.arduino.cc/arduino-uno-rev3)
 * 1x RHT03 Humidity Temp Sensor [here](https://www.banggood.com/AM2302-DHT22-Temperature-And-Humidity-Sensor-Module-p-937403.html?gpla=1&gmcCountry=GB&currency=GBP&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=lijing&utm_campaign=ssc-gb-all-bf11-re0323&gclid=EAIaIQobChMIgtuKq_Xl6QIVQuDtCh2hkg53EAQYBSABEgL3-PD_BwE&cur_warehouse=UK)
@@ -115,8 +119,9 @@ After some time googling, I found that even though plants don’t need yellow an
 I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better 3 year son I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
 
 <div align="center">
-<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195337.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195402.jpg" alt="led image" width="45%"/> </div>
-
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195337.jpg" alt="240v lights image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195402.jpg" alt="240v lights image" width="45%"/> </div>
+<div align="center">
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195506.jpg" alt="peppers image" width="45%"/> </div>
 
 ## Air Extraction:
 I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project.  I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
