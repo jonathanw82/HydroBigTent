@@ -22,7 +22,7 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 The heart of the system is an arduino Uno, connected to a real-time clock modal an lcd display and a rotary encoder. The arduino works out to points in time and whether the lights should be on or off depending where it is between these time cycles even if the power has dropped out during. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering times have been reached and turning on pumps if so. The system can handle NFT and Ebb and flow style systems.
 During the creation of the system I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles.
 
-[Lighting](#lighting)
+When i first created the system I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intencity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
  
 ## Parts:
 * 1x Arduino Uno (Rev3) [here](https://store.arduino.cc/arduino-uno-rev3)
@@ -63,7 +63,6 @@ During the creation of the system I have made it able to have 2 tents with 2 ind
 * Large quiet extractor fan
 * Silent running circulation fans
 * Quiet air pump
-
 
 
 ## Lcd Display:
@@ -113,7 +112,10 @@ The lighting panel was made up of a piece of aluminuim from the lid of a 2p push
 
 After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
+I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better 3 year son I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
 
+<div align="center">
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195337.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195402.jpg" alt="led image" width="45%"/> </div>
 
 
 ## Air Extraction:
