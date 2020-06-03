@@ -61,10 +61,18 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Quiet air pump
 
 ## Lighting
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="50%"/>
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="50%"/>
+
 The lighting panel has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight. 
-<h4 align="center">
-   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/hydro1.jpg" alt="Hydro image" width="50%"/>
- </h4>
+
+<div align="center">
+   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/fullspectrum.jpg" alt="light spectrum image"/>
+ </div>
+ <div align="center">
+   <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/Warm_vs_Cool_White-1.jpg" alt="light spectrum image"/>
+ </div>
+
 After some time goggling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
 ### Nice to have: 
