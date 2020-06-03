@@ -37,7 +37,7 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 6x golf ball air stones and pipe.
 25x growsun 3w Full spaectrum 380nm-840nm Led Chips [here](https://www.banggood.com/3W-380nm-840nm-Full-Spectrum-LED-Plant-Grow-Light-Chip-for-Garden-3_0-3_4V-p-1060934.html?rmmds=search&cur_warehouse=CN)
 15x High Power Led Chip 3W Cool White 3000K-3500K chips [here](https://www.lightinthebox.com/en/p/diy-3w-high-power-220-240lm-warm-white-light-led-module-3-2-3-6v-15pcs_p1549727.html?currency=GBP&litb_from=paid_adwords_shopping&country_code=gb&utm_source=google_shopping&utm_medium=cpc&adword_mt=&adword_ct=412206506589&adword_kw=&adword_pos=&adword_pl=&adword_net=u&adword_tar=&adw_src_id=3516490533_8950463197_93145555187_pla-861857501271&gclid=EAIaIQobChMI5uOt_P_l6QIVW-ztCh0_fAEAEAkYBSABEgL1ffD_BwE)
-3x Noise Blocker 120mm fans [here](https://www.blacknoise.com/site/en/products/noiseblocker-it-fans/nb-eloop-series/120x120x25mm.php?lang=EN)
+3x Noise Blocker 140mm fans [here](https://www.blacknoise.com/site/en/products/noiseblocker-it-fans/nb-eloop-series/120x120x25mm.php?lang=EN)
 
 
 ## Recycled parts:
@@ -60,12 +60,42 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Silent running circulation fans
 * Quiet air pump
 
+## Lcd Display:
+During day to day running the lcd display scrolls through a few screen of data including
+* Time and date 
+* Air temperature and humidity
+* The big tank water temperature
+* Tank 2 water temperature
+* Tank3 water temperature
+* Heat pad Status
+* Light Cycle for the 12v led panel
+* Light Cycle for the 240v led bulbs
+
+### Setup program flow:
+On pressing the rotery encoder center button
+* Lighting time 240v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
+* Lighting time 12v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
+* Watering duration, on click will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
+* Watering time, on click will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotate further left a selection to fur on NFT will appear. Further adjustment to NFT can be done in the next menu.
+* NFT with Cycle, on click will give a menu allowing selection of on duration on and duration off in minutes.
+* Manual water, on click will give a menu allowing selection manual overriding the water pump, in case of now plants needing an initial dousing of nutrient feed.
+* Daylight Saving, on click will give a menu allowing selection or plus or minus 1 hour. This only effects the clock on the lcd display and will not change the watering or lighting cycles due to some plants being sensitive to change in lighting durations.
+* Heat mate temperature settings, on click will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
+* Exit Menu
+* If the centre button on the encoder is held down it will cause the arduino to rest by kicking the watch dog, this can be done regardless of being in setup mode.
+
+
 ## Lighting
+The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive but there was to many chips in close succession so I had to add a fan, most of the early fans I used where really loud or vibrated to much so I added a noise blocker fan as they produce  178.3 m3 /h @28.5db so it was a good compromise.  
+
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="45%"/> </div>
 
 
-The lighting panel has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight. 
+
+The lighting panel was made up of a piece of aluminuim from the lid of a 2p pusher control box with an old  has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight. 
+
+
 
 <div align="center">
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/fullspectrum.jpg" alt="light spectrum image"/>
@@ -74,7 +104,15 @@ The lighting panel has evolved somewhat during construction. The first version o
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/Warm_vs_Cool_White-1.jpg" alt="light spectrum image"/>
  </div>
 
-After some time goggling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+
+After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+
+
+## Air Extraction:
+I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project.  I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
+
+I could have used the arduino on a PWM channel with a solidstate realy to regualte the fan speed but I was running out of space on the eerprom as it was.
+
 
 ### Nice to have: 
 These features may be included in future releases of this application.
