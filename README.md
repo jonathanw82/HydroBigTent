@@ -124,12 +124,12 @@ I created a second lighting fixture as I needed more light but was unable to get
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195506.jpg" alt="peppers image" width="45%"/> </div>
 
-## Air Extraction:
+### Air Extraction:
 I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
 
 I could have used the arduino on a PWM channel with a solid state relay to regulate the fan speed but I was running out of space on the eerprom as it was.
 
-## Air Pumps
+### Air Pumps
 During the early stages I tried multiple types of systems from deep water culture to NFT and in the end settles for deep water culture, I was originally using a really small air pump and for a while noticed that the plants were lagging in something especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on head so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
 
 
@@ -141,7 +141,7 @@ These features may be included in future releases of this application.
 * Water cooler
 
 
-## Bugs & ongoing fixes
+### Bugs & ongoing fixes
 * The rotary encoder can be laggy and need quite q few revolutions to get get to where the user needs to be in the menu.
 * The water temp sensors are cheap and there output is erratic this can cause the heater mat relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future realeses I will get better quality sensors.
 
@@ -149,6 +149,8 @@ These features may be included in future releases of this application.
 ### Credits:
 I would like to thank my firend Cersnic Tebor for his help with this project.
 
+The ideas for the menu system came from here 
+http://educ8s.tv/arduino-rotary-encoder-menu/
 
 ##### Media:
 
@@ -157,5 +159,7 @@ https://thegreensunshineco.com/think-beyond-white-led-and-bulb-grow-lights-kelvi
 
 Image of Full spectrum wave length
 https://futureeden.co.uk/
+
+All other images are my own.
 
 [Back_to_top](#Hydroponics)
