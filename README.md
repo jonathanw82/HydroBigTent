@@ -19,10 +19,21 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * The system can user multiple types of hydroponic platforms such as, Deep water Culture, Nutrient film technique, Ebb and flow etc
 * Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill
 
-The heart of the system is an arduino Uno, connected to a real-time clock modal an lcd display and a rotary encoder. The arduino works out to points in time and whether the lights should be on or off depending where it is between these time cycles even if the power has dropped out during. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering times have been reached and turning on pumps if so. The system can handle NFT and Ebb and flow style systems.
+The heart of the system is an arduino Uno, connected to a real-time clock module, an lcd display and a rotary encoder. The arduino works out to points in time and whether the lights should be on or off depending where it is between these time cycles even if the power has dropped out during. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering times have been reached and turning on pumps if so. The system can handle NFT and Ebb and flow style systems.
 During the creation of the system I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles.
+The incorporation of a menu system and using EEprom to save settings was also implemented at this time. 
 
-When i first created the system I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intencity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
+When I first created the system, I originally used a compact florescent light but I found if chews too much power to lumen output, I also tried to run the lights of a solid state relay however being florescent at the time, made if flicker even when it was off due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage and then bulb with try to start but then dies dimply back. To get round this I used a standard relay but due to the inrush current being 100 times the operating current the florescent bulb it would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated a well over any spike in current the bulb could produce. Soon after the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intencity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
+ 
+ ## Features:
+* Rotery encoder for navigation
+* Lcd display for easy and real time data
+* Realtime clock
+* Led lights
+* Silent running cooling fans
+* Large quiet extractor fan
+* Silent running circulation fans
+* Quiet air pump
  
 <div align="center">
    <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/hydro_schem.jpg" alt="wireing diagram"/></div>
@@ -56,17 +67,6 @@ When i first created the system I originally used a compact florescent light but
 * 1x Heatsink from an old sega daytona graphics card.
 * 2x storage boxes.
 * Variouse other parts
-
-
-## Features:
-* Rotery encoder for navigation
-* Lcd display for easy and real time data
-* Realtime clock
-* Led lights
-* Silent running cooling fans
-* Large quiet extractor fan
-* Silent running circulation fans
-* Quiet air pump
 
 
 ## Lcd Display:
@@ -141,14 +141,11 @@ These features may be included in future releases of this application.
 * The rotary encoder can be laggy and need quite q few revolutions to get get to where the user needs to be in the menu.
 * The water temp sensors are cheap and there output is erratic this can cause the heater mat relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future realeses I will get better quality sensors.
 
-## 
-
 
 ### Credits:
 
 
-
-
+[Back_to_top](#the)
 
 ##### Media:
 
