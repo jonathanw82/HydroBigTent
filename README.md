@@ -30,14 +30,14 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * 1x 4 channel realy [here](https://cpc.farnell.com/velleman-kit/vma400/4-channel-relay-module-for-arduino/dp/SC14419?mckv=sA419NTjI_dc|pcrid|224679642167|kword||match||plid||slid||product|SC14419|pgrid|47129782516|ptaid|pla-371255952663|&CMP=KNC-GUK-CPC-SHOPPING&gclid=EAIaIQobChMIssm7n_fl6QIVj-vtCh0o4Af9EAQYBSABEgLoQPD_BwE)
 * 1x Contactor CUC20 [here](https://www.screwfix.com/p/british-general-20a-dp-contactor/6654p?_requestid=594347)
 * 1x 5v 30amp Relay [here](https://robotdyn.com/relay-module-1-relay-5v-30a.html)
-1x RK100 Can-fan [here](http://www.canfan.nl/cfrk100.html)
-1x Acoustic air ducting [here](https://www.electrical2go.co.uk/insulated-aluminium-ducting-100mm-x-10m-fxalins-100.html?utm_source=google_shopping&gclid=EAIaIQobChMIhP-7jf_l6QIVmKztCh2FawO8EAQYBSABEgJEyvD_BwE)
-1x Grow tent
-1x Eheim air pump 400 [here](https://www.eheim.com/en_GB/products/technology/air-pumps/air-400)
-6x golf ball air stones and pipe.
-25x growsun 3w Full spaectrum 380nm-840nm Led Chips [here](https://www.banggood.com/3W-380nm-840nm-Full-Spectrum-LED-Plant-Grow-Light-Chip-for-Garden-3_0-3_4V-p-1060934.html?rmmds=search&cur_warehouse=CN)
-15x High Power Led Chip 3W Cool White 3000K-3500K chips [here](https://www.lightinthebox.com/en/p/diy-3w-high-power-220-240lm-warm-white-light-led-module-3-2-3-6v-15pcs_p1549727.html?currency=GBP&litb_from=paid_adwords_shopping&country_code=gb&utm_source=google_shopping&utm_medium=cpc&adword_mt=&adword_ct=412206506589&adword_kw=&adword_pos=&adword_pl=&adword_net=u&adword_tar=&adw_src_id=3516490533_8950463197_93145555187_pla-861857501271&gclid=EAIaIQobChMI5uOt_P_l6QIVW-ztCh0_fAEAEAkYBSABEgL1ffD_BwE)
-3x Noise Blocker 140mm fans [here](https://www.blacknoise.com/site/en/products/noiseblocker-it-fans/nb-eloop-series/120x120x25mm.php?lang=EN)
+* 1x RK100 Can-fan [here](http://www.canfan.nl/cfrk100.html)
+* 1x Acoustic air ducting [here](https://www.electrical2go.co.uk/insulated-aluminium-ducting-100mm-x-10m-fxalins-100.html?utm_source=google_shopping&gclid=EAIaIQobChMIhP-7jf_l6QIVmKztCh2FawO8EAQYBSABEgJEyvD_BwE)
+* 1x Grow tent
+* 1x Eheim air pump 400 [here](https://www.eheim.com/en_GB/products/technology/air-pumps/air-400)
+* 6x golf ball air stones and pipe.
+* 25x growsun 3w Full spaectrum 380nm-840nm Led Chips [here](https://www.banggood.com/3W-380nm-840nm-Full-Spectrum-LED-Plant-Grow-Light-Chip-for-Garden-3_0-3_4V-p-1060934.html?rmmds=search&cur_warehouse=CN)
+* 15x High Power Led Chip 3W Cool White 3000K-3500K chips [here](https://www.lightinthebox.com/en/p/diy-3w-high-power-220-240lm-warm-white-light-led-module-3-2-3-6v-15pcs_p1549727.html?currency=GBP&litb_from=paid_adwords_shopping&country_code=gb&utm_source=google_shopping&utm_medium=cpc&adword_mt=&adword_ct=412206506589&adword_kw=&adword_pos=&adword_pl=&adword_net=u&adword_tar=&adw_src_id=3516490533_8950463197_93145555187_pla-861857501271&gclid=EAIaIQobChMI5uOt_P_l6QIVW-ztCh0_fAEAEAkYBSABEgL1ffD_BwE)
+* 3x Noise Blocker 140mm fans [here](https://www.blacknoise.com/site/en/products/noiseblocker-it-fans/nb-eloop-series/120x120x25mm.php?lang=EN)
 
 
 ## Recycled parts:
@@ -59,6 +59,8 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Large quiet extractor fan
 * Silent running circulation fans
 * Quiet air pump
+
+
 
 ## Lcd Display:
 During day to day running the lcd display scrolls through a few screen of data including
