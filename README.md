@@ -124,6 +124,8 @@ I created a second lighting fixture as I needed more light but was unable to get
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/20200603_195506.jpg" alt="peppers image" width="45%"/> </div>
 
+[Back_to_top](#Hydroponics)
+
 ## Air Extraction:
 I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
 
