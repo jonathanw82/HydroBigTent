@@ -104,7 +104,7 @@ The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p 
 
 
 #
-The lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with an old  has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight.  
+The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight.  
 #
 
 
