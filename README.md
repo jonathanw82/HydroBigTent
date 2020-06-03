@@ -61,8 +61,10 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * Quiet air pump
 
 ## Lighting
-<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="50%"/>
-<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="50%"/>
+<span>
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="50%"/> </span>
+<span>
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="50%"/></span>
 
 The lighting panel has evolved somewhat during construction. The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight. 
 
