@@ -19,7 +19,11 @@ I created this Hydropoincs system out of my love of mixing technology with natur
 * The system can user multiple types of hydroponic platforms such as, Deep water Culture, Nutrient film technique, Ebb and flow etc
 * Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill
 
+The heart of the system is an arduino Uno, connected to a real-time clock modal an lcd display and a rotary encoder. The arduino works out to points in time and whether the lights should be on or off depending where it is between these time cycles even if the power has dropped out during. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering times have been reached and turning on pumps if so. The system can handle NFT and Ebb and flow style systems.
+During the creation of the system I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles.
 
+[Lighting](#lighting)
+ 
 ## Parts:
 * 1x Arduino Uno (Rev3) [here](https://store.arduino.cc/arduino-uno-rev3)
 * 1x RHT03 Humidity Temp Sensor [here](https://www.banggood.com/AM2302-DHT22-Temperature-And-Humidity-Sensor-Module-p-937403.html?gpla=1&gmcCountry=GB&currency=GBP&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=lijing&utm_campaign=ssc-gb-all-bf11-re0323&gclid=EAIaIQobChMIgtuKq_Xl6QIVQuDtCh2hkg53EAQYBSABEgL3-PD_BwE&cur_warehouse=UK)
@@ -108,6 +112,8 @@ The lighting panel was made up of a piece of aluminuim from the lid of a 2p push
 
 
 After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis , there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the  red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+
+
 
 
 ## Air Extraction:
