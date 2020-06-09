@@ -73,7 +73,7 @@ When I first created the system, I originally used a compact florescent light, b
 
 ## Lcd Display:
 <div align="center">
-<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/></div>
+<img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lcd.jpg" alt="topof image" width="45%"/></div>
 
 #
 During day to day running the lcd display scrolls through a few screen of data including
