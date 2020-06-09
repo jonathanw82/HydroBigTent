@@ -21,7 +21,7 @@ When I first created the system, I originally used a compact florescent light, b
 
 #### I think this system gives this to the user because:
 * The rotery encoder is easy to use with one button click.
-* The dispplay cycles through cueenrt realtime data such as temperature and humidity.
+* The display cycles through current realtime data such as temperature and humidity.
 * The entire system only takes 210 watts max.
 * The system can user multiple types of hydroponic platforms such as, Deep water Culture, Nutrient film technique, Ebb and flow etc.
 * Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill.
