@@ -88,10 +88,10 @@ On pressing the rotary encoder centre button
 * Lighting time 12v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
 * Watering duration, on click will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
 * Watering time, on click will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotate further left a selection to fur on NFT will appear. Further adjustment to NFT can be done in the next menu.
-* NFT with Cycle, on click will give a menu allowing selection of on duration on and duration off in minutes.
+* NFT with Cycle, on click will give a menu allowing selection of on duration and off duration in minutes.
 * Manual water, on click will give a menu allowing selection manual overriding the water pump, in case of now plants needing an initial dousing of nutrient feed.
-* Daylight Saving, on click will give a menu allowing selection or plus or minus 1 hour. This only effects the clock on the lcd display and will not change the watering or lighting cycles due to some plants being sensitive to change in lighting durations.
-* Heat mate temperature settings, on click will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
+* Daylight Saving, on click will give a menu allowing selection of plus or minus 1 hour. This only effects the clock on the lcd display and will not change the global watering or lighting cycles due to some plants being sensitive to changes in lighting durations.
+* Heat mat temperature settings, on click will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
 * Exit Menu
 * If the centre button on the encoder is held down it will cause the arduino to rest by kicking the watch dog, this can be done regardless of being in setup mode.
 
@@ -104,7 +104,7 @@ The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p 
 
 
 #
-The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow I found they became leggy and unable to hold their own weight.  
+The first version only had the Growsun led grow lights giving a pink colour due to the colour spectrum from blue 320nm and the red 840nm with nothing much else, while plants did grow, I found they became leggy and unable to hold their own weight.  
 #
 
 
@@ -113,7 +113,7 @@ The first version only had the Growsun led grow lights giving a pink colour due 
  </div>
 
 #
-After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds in to mix it up however due to the wavelengths favouring the red end of the spectrum, the plats stared to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds to cover more of the visible light spectrum, even though some people will debate this is a waste of energy, however due to the wavelengths favouring the red end of the spectrum, the plants started to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
 #
  <div align="center">
@@ -121,7 +121,7 @@ After some time googling, I found that even though plants don’t need yellow an
  </div>
  
 #
-I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better 3 year son I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
+I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
 #
 
 <div align="center">
