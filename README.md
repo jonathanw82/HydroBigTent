@@ -121,7 +121,7 @@ After some time googling, I found that even though plants don’t need yellow an
  </div>
  
 #
-I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, it had had multiple chilli plants and peppers flower underneath no problems.
+I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, The led bulbs emit almost no heat, so any concern there were eliminated, it's had had multiple chilli plants and peppers flower underneath no problems.
 #
 
 <div align="center">
