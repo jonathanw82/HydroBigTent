@@ -140,7 +140,7 @@ I could have used the arduino on a PWM channel with a solid state relay to regul
 During the early stages I tried multiple types of systems from deep water culture to NFT and in the end settles for deep water culture, I was originally using a really small air pump and for a while noticed that the plants were lagging in something especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on head so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
 
 ## Growroom tools:
-My weapons of choice when it comes to making nutrient solution:
+My tools of choice when it comes to making nutrient solution:
 * Bluelab Truncheon for testing the TDS/EC [here](https://bluelab.com/bluelab-commercial-truncheon-nutrient-meter)
 * HM Digital PH-80 for testing PH [here](http://hmdigital.com/product/ph-80/)
 
