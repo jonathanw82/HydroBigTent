@@ -23,7 +23,7 @@ When I first created the system, I originally used a compact florescent light, b
 * The rotery encoder is easy to use with one button click.
 * The display cycles through current realtime data such as temperature and humidity.
 * The entire system only takes 210 watts max.
-* The system can user multiple types of hydroponic platforms such as, Deep water Culture, Nutrient film technique, Ebb and flow etc.
+* The system can user multiple types of hydroponic platforms such as, Deep Water Culture, Nutrient Film Technique, Ebb and Flow etc.
 * Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill.
 
  
@@ -65,10 +65,10 @@ When I first created the system, I originally used a compact florescent light, b
 * 1x 240v to 110v Auto Transformer [here](https://mcitransformer.com/product/mci-4-49-series/) From an old video game.
 * 1x S-150-12 Switch mode power supply [here](https://uk.rs-online.com/web/p/embedded-switch-mode-power-supplies-smps/6210663?cm_mmc=UK-PLA-DS3A-_-google-_-PLA_UK_EN_Power_Supplies_%26_Transformers_Whoop-_-Embedded+Switch+Mode+Power+Supplies+(SMPS)_Whoop-_-6210663&matchtype=&pla-475399700067&gclid=EAIaIQobChMIk967q_rl6QIVjO7tCh3r8AJ4EAQYASABEgLKf_D_BwE&gclsrc=aw.ds) from an old video game.
 * 1x RD-65A Switch mode power supply [here](https://uk.rs-online.com/web/p/embedded-switch-mode-power-supplies-smps/6447102/?relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B2426706F3D31333326736E3D592673723D2673743D4B4559574F52445F53494E474C455F414C5048415F4E554D455249432673633D592677633D4E4F4E45267573743D72642D363561267374613D72642D36356126&searchHistory=%7B%22enabled%22%3Atrue%7D) From an old video game.
-* 1x Aluminium sheet from contoll unit of a screap 2 penny pusher.
-* 1x Heatsink from an old sega daytona graphics card.
+* 1x Aluminium sheet from the contol unit of a scap 2 penny pusher.
+* 1x Heatsink from an old sega daytona video game graphics card.
 * 2x storage boxes.
-* Variouse other parts
+* Variouse other parts.
 
 
 ## Lcd Display:
@@ -81,27 +81,27 @@ During day to day running the lcd display scrolls through a few screen of data i
 * Air temperature and humidity
 * The big tank water temperature
 * Tank 2 water temperature
-* Tank3 water temperature
-* Heat pad Status
-* Light Cycle for the 12v led panel
-* Light Cycle for the 240v led bulbs
+* Tank 3 water temperature
+* Heat pad status
+* Light cycle for the 12v led panel
+* Light cycle for the 240v led bulbs
 
 ### Setup program flow:
 On pressing the rotary encoder centre button
-* Lighting time 240v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
-* Lighting time 12v lights, on click will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
-* Watering duration, on click will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
-* Watering time, on click will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotate further left a selection to fur on NFT will appear. Further adjustment to NFT can be done in the next menu.
-* NFT with Cycle, on click will give a menu allowing selection of on duration and off duration in minutes.
-* Manual water, on click will give a menu allowing selection manual overriding the water pump, in case of now plants needing an initial dousing of nutrient feed.
-* Daylight Saving, on click will give a menu allowing selection of plus or minus 1 hour. This only effects the clock on the lcd display and will not change the global watering or lighting cycles due to some plants being sensitive to changes in lighting durations.
-* Heat mat temperature settings, on click will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
-* Exit Menu
+* Lighting time 240v lights, on click, will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
+* Lighting time 12v lights, on click, will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
+* Watering duration, on click, will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
+* Watering time, on click, will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotate further left a selection to fur on NFT will appear. Further adjustment to NFT can be done in the next menu.
+* NFT with cycle, on click, will give a menu allowing selection of on duration and off duration in minutes.
+* Manual water, on click, will give a menu allowing selection manual overriding the water pump, in case of now plants needing an initial dousing of nutrient feed.
+* Daylight saving, on click, will give a menu allowing selection of plus or minus 1 hour. This only effects the clock on the lcd display and will not change the global watering or lighting cycles due to some plants being sensitive to changes in lighting durations.
+* Heat pad temperature settings, on click, will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
+* Exit menu
 * If the centre button on the encoder is held down it will cause the arduino to rest by kicking the watch dog, this can be done regardless of being in setup mode.
 
 
 ## Lighting
-The 12v lighting panel was made up of a piece of aluminium from the lid of a 2p pusher control box with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive but there was to many chips in close succession so I had to add a fan, most of the early fans I used where really loud or vibrated to much so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.  
+The 12v lighting panel was made up of a piece of aluminium from the lid of a 2 penny pusher control box, with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive, but there was to many led chips in close proximity, so I had to add a fan, most of the early fans I used where really loud or vibrated to much, so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.  
 #
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="45%"/> </div>
@@ -117,7 +117,7 @@ The first version only had the Growsun led grow lights giving a pink colour due 
  </div>
 
 #
-After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light help the plant push toxins out of the leaves, I have no clue if this is true however I decided to add some warm white leds to cover more of the visible light spectrum, even though some people will debate this is a waste of energy, however due to the wavelengths favouring the red end of the spectrum, the plants started to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light helps the plants push toxins out of the leaves, I have no clue if this is true however, I decided to add some warm white leds to cover more of the visible light spectrum, even though some people will argue this is a waste of energy, however due to the wavelengths favouring the red end of the spectrum, the plants started to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
 
 #
  <div align="center">
@@ -125,7 +125,7 @@ After some time googling, I found that even though plants don’t need yellow an
  </div>
  
 #
-I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, The led bulbs emit almost no heat, so any concern there were eliminated, it's had had multiple chilli plants and peppers flower underneath no problems.
+I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, I used a mix of warm white and datlight 240v led [bulbs](https://www.lampshoponline.com/12-5w-energizer-led-gls-6500k-b22-s9427.html?gclid=EAIaIQobChMI4-Xdm4_y6gIVQWHmCh3R6QFPEAQYASABEgLJifD_BwE) that emit almost no heat, so any concern there were eliminated, I have had multiple chilli plants and peppers flower underneath no problems.
 #
 
 <div align="center">
@@ -136,12 +136,12 @@ I created a second lighting fixture as I needed more light but was unable to get
 [Back_to_top](#Hydroponics)
 
 ## Air Extraction:
-I chose the RK100 Can-fan, as at the time was the most affordable however early on I realised it was for too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopped the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate.
+I chose the RK100 Can-fan, as at the time was the most affordable however, early on I realised it was far too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopp the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal, so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate running the fan at 110v instead of 240v.
 
 I could have used the arduino on a PWM channel with a solid state relay to regulate the fan speed but I was running out of space on the eerprom as it was.
 
 ## Air Pumps
-During the early stages I tried multiple types of systems from deep water culture to NFT and in the end settles for deep water culture, I was originally using a really small air pump and for a while noticed that the plants were lagging in something especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on head so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
+During the early stages I tried multiple types of systems from Deep Water Culture to NFT and in the end settles for Deep Water Culture, I was originally using a really small air pump and noticed that the plants were lagging in something, especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on temperature, so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
 
 ## Growroom tools:
 My tools of choice when it comes to making nutrient solution:
@@ -176,19 +176,19 @@ The nutrients that have become stapes in my grow room
 
 ## Nice to have: 
 These features may be included in future releases of this application.
-* Digital Extraction fans
+* Digital extraction fans
 * Higher power led lighting
 * Air conditioning
 * Water cooler
 
 
 ## Bugs & ongoing fixes
-* The rotary encoder can be laggy and need quite q few revolutions to get get to where the user needs to be in the menu.
-* The water temp sensors are cheap and there output is erratic this can cause the heater mat relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future realeses I will get better quality sensors.
+* The rotary encoder can be laggy and need quite a few revolutions to get get to where the user needs to be in the menu.
+* The water temp sensors are cheap and there output is erratic this can cause the heater pad relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future releases I will get better quality sensors.
 
 
 ### Credits:
-I would like to thank my firend Cersnic Tebor for his help with this project.
+I would like to thank my friend Cersnic Tebor for his help with this project.
 
 The ideas for the menu system came from here 
 http://educ8s.tv/arduino-rotary-encoder-menu/
