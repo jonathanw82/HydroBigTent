@@ -3,16 +3,14 @@
  </h1>
  
 ## Hydroponics
-I created this Hydropoincs system out of my love of mixing technology with nature, the ability to harness the the building blocks of life to create tasty food in my dining room. This project is a work in progress but i am proud of the evolution of it.
+I created this Hydroponics system out of my love of mixing technology with nature, the ability to harness the building blocks of life to create tasty food in my dining room. This project is a work in progress but I am proud of the evolution of it.
 
-The heart of the system is an arduino Uno, connected to a real-time clock module, an lcd display and a rotary encoder. The arduino works out to points in time and whether the lights should be on or off depending where it is between these time cycles, even if the power has dropped out during the cycle. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering intervals have been reached and turn pumps on if so. The system can handle NFT and Ebb and flow style systems.
-During the creation of the system I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles.
-The incorporation of a menu system and using EEprom to save settings was also implemented at this time. 
+The heart of the system is an Arduino Uno, connected to a real-time clock module, an LCD display and a rotary encoder. The Arduino works out to points in time and whether the lights should be on or off depending on where it is between these time cycles, even if the power has dropped out during the cycle. It also monitors water temperature and turns on heat mats if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering intervals have been reached and turn pumps on if so. The system can handle NFT and Ebb and flow style systems. During the creation of the system, I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles. The incorporation of a menu system and using EEprom to save settings was also implemented at this time.
 
-When I first created the system, I originally used a compact florescent light, but I found if chews too much power to lumen ratio, I also tried to run the lights of a solid state relay however being florescent, the solid state relay made if flicker even when it was off, due to the way solid state relay have a small but normal current flow through them that slowly charges up the capacitors in the florescent bulbs ballast, when they get to their minimum stating voltage the bulb with try to start but then die back dimply. To get round this, I used a standard relay, but due to the inrush current being 100+ times the operating current, the florescent bulb would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail.  At this point I decided to go with a contactor as it is rated at well over any spike in current the bulb could produce. Soon after, the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on how with light intensity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
+When I first created the system, I originally used a compact fluorescent light, but I found if chews too much power to lumen ratio, I also tried to run the lights of a solid-state relay however being florescent, the solid-state relay made if flicker even when it was off, due to the way solid-state relay has a small but normal current flow through them that slowly charges up the capacitors in the fluorescent bulbs ballast when they get to their minimum stating voltage the bulb with try to start but then die back dimply. To get around this, I used a standard relay, but due to the inrush current being 100+ times the operating current, the florescent bulb would fuse the relay terminals together not allowing the bulb to turn off, I even tried putting a snubber across the terminals but to no avail. At this point, I decided to go with a contractor as it is rated well over any spike in current the bulb could produce. Soon after, the florescent was replaced with the led bulbs in the second lighting fixture created out of individual bulbs that can be added or removed depending on the light intensity I needed for that particular application. More on lighting can be found here [Lighting](#lighting)
 
 
-#### The users goals of this system are:
+#### The user's goals of this system are:
 * An easy to navigate menu
 * Low power consumption
 * Zero landfill
@@ -20,16 +18,16 @@ When I first created the system, I originally used a compact florescent light, b
 
 
 #### I think this system gives this to the user because:
-* The rotery encoder is easy to use with one button click.
+* The rotary encoder is easy to use with one button click.
 * The display cycles through current realtime data such as temperature and humidity.
 * The entire system only takes 210 watts max.
-* The system can user multiple types of hydroponic platforms such as, Deep Water Culture, Nutrient Film Technique, Ebb and Flow etc.
-* Due to the use of pool noodles, jiffy's, netcups, clay pebbles and coco, there is no rockwool so zero landfill.
+* The system can use multiple types of hydroponic platforms such as Deep Water Culture, Nutrient Film Technique, Ebb and Flow etc.
+* Due to the use of pool noodles, jiffy's, net cups, clay pebbles and coco, there is no Rockwool so zero landfill.
 
  
  ## Features:
-* Rotery encoder for navigation
-* Lcd display for easy and real time data
+* Rotary encoder for navigation
+* Lcd display for easy and real-time data
 * Realtime clock
 * Led lights
 * Silent running cooling fans
@@ -76,7 +74,7 @@ When I first created the system, I originally used a compact florescent light, b
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lcd.jpg" alt="topof image" width="45%"/></div>
 
 #
-During day to day running the lcd display scrolls through a few screen of data including
+During day to day running the LCD display scrolls through a few screens of data including
 * Time and date 
 * Air temperature and humidity
 * The big tank water temperature
@@ -91,17 +89,17 @@ On pressing the rotary encoder centre button
 * Lighting time 240v lights, on click, will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
 * Lighting time 12v lights, on click, will give a menu allowing selection of 0, 12, 14, 16, 18 hours duration.
 * Watering duration, on click, will give a menu allowing selection of between 5 and 90 seconds in 0.5 increments duration.
-* Watering time, on click, will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotate further left a selection to fur on NFT will appear. Further adjustment to NFT can be done in the next menu.
+* Watering time, on click, will give a menu allowing selection of auto water off, or if rotated to the right you can select what hour you would like to start watering. If at the auto water off selection if the encoder is rotated further left a selection to turn on NFT will appear. Further adjustment to NFT can be done in the next menu.
 * NFT with cycle, on click, will give a menu allowing selection of on duration and off duration in minutes.
 * Manual water, on click, will give a menu allowing selection manual overriding the water pump, in case of now plants needing an initial dousing of nutrient feed.
-* Daylight saving, on click, will give a menu allowing selection of plus or minus 1 hour. This only effects the clock on the lcd display and will not change the global watering or lighting cycles due to some plants being sensitive to changes in lighting durations.
+* Daylight saving, on click, will give a menu allowing selection of plus or minus 1 hour. This only affects the clock on the LCD display and will not change the global watering or lighting cycles due to some plants being sensitive to changes in lighting durations.
 * Heat pad temperature settings, on click, will give a menu allowing the max temperate of the heat mate from 0 to 25 degrease centigrade.
 * Exit menu
-* If the centre button on the encoder is held down it will cause the arduino to rest by kicking the watch dog, this can be done regardless of being in setup mode.
+* If the centre button on the encoder is held down it will cause the Arduino to rest by kicking the watchdog, this can be done regardless of being in setup mode.
 
 
 ## Lighting
-The 12v lighting panel was made up of a piece of aluminium from the lid of a 2 penny pusher control box, with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first I wanted the cooling to be passive, but there was to many led chips in close proximity, so I had to add a fan, most of the early fans I used where really loud or vibrated to much, so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.  
+The 12v lighting panel was made up of a piece of aluminium from the lid of a 2 penny pusher control box, with a heat sink from a Sega Daytona video game and stuck to the top with thermal glue. At first, I wanted the cooling to be passive, but there were too many led chips in close proximity, so I had to add a fan, most of the early fans I used were really loud or vibrated too much, so I added a noise blocker fan as they produce 178.3 m3/h @28.5db so it was a good compromise.   
 #
 <div align="center">
 <img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/lightwithfan.jpg" alt="topof image" width="45%"/><img src="https://github.com/jonathanw82/HydroBigTent/blob/master/images/leds.jpg" alt="led image" width="45%"/> </div>
@@ -117,7 +115,7 @@ The first version only had the Growsun led grow lights giving a pink colour due 
  </div>
 
 #
-After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light helps the plants push toxins out of the leaves, I have no clue if this is true however, I decided to add some warm white leds to cover more of the visible light spectrum, even though some people will argue this is a waste of energy, however due to the wavelengths favouring the red end of the spectrum, the plants started to bolt early. At this point I changed them for cool white leds, the difference was amazing and the plants shot into life, woodier stems and healthy looking leaves.
+After some time googling, I found that even though plants don’t need yellow and green light for photosynthesis, there is some debate around whether green light helps the plants push toxins out of the leaves, I have no clue if this is true however, I decided to add some warm white LEDs to cover more of the visible light spectrum, even though some people will argue this is a waste of energy, however, due to the wavelengths favouring the red end of the spectrum, the plants started to bolt early. At this point I changed them for cool white LEDs, the difference was amazing and the plants shot into life, woodier stems and healthy-looking leaves.
 
 #
  <div align="center">
@@ -125,7 +123,7 @@ After some time googling, I found that even though plants don’t need yellow an
  </div>
  
 #
-I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, I used a mix of warm white and datlight 240v led [bulbs](https://www.lampshoponline.com/12-5w-energizer-led-gls-6500k-b22-s9427.html?gclid=EAIaIQobChMI4-Xdm4_y6gIVQWHmCh3R6QFPEAQYASABEgLJifD_BwE) that emit almost no heat, so any concern there were eliminated, I have had multiple chilli plants and peppers flower underneath no problems.
+I created a second lighting fixture as I needed more light but was unable to get any of the scrap parts I had used previously, so I had to improvise with the intention it would be replaced in a few months with something better, 3 years on I’m still using it. Created from a cardboard box and tinfoil with 6x 240v bulb holders and a light switch, I used a mix of warm white and daylight 240v led [bulbs](https://www.lampshoponline.com/12-5w-energizer-led-gls-6500k-b22-s9427.html?gclid=EAIaIQobChMI4-Xdm4_y6gIVQWHmCh3R6QFPEAQYASABEgLJifD_BwE) that emit almost no heat, so any concern there were eliminated, I have had multiple chilli plants and peppers flower underneath no problems.
 #
 
 <div align="center">
@@ -136,12 +134,12 @@ I created a second lighting fixture as I needed more light but was unable to get
 [Back_to_top](#Hydroponics)
 
 ## Air Extraction:
-I chose the RK100 Can-fan, as at the time was the most affordable however, early on I realised it was far too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chopp the ac waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half speed was ideal, so I swapped out the fan speed controller for an 110v transformer I recycled from an old video game and it was a perfect extraction rate running the fan at 110v instead of 240v.
+I chose the RK100 Can-fan, as at the time was the most affordable, however, early on I realised it was far too powerful for what I needed as the tent caved in on itself when at full speed, it also made quite some noise, originally I put a cheap fan speed controller on it but due to the crude way they chop the alternating current waveform it made the fan hum and drone. A proper speed controller was too expensive for the project. I did realise that half-speed was ideal, so I swapped out the fan speed controller for a 110v transformer I recycled from an old video game and it was a perfect extraction rate running the fan at 110v instead of 240v.
 
-I could have used the arduino on a PWM channel with a solid state relay to regulate the fan speed but I was running out of space on the eerprom as it was.
+I could have used the Arduino on a Pulse Width Modulation (PWM) channel with a solid-state relay to regulate the fan speed but I was running out of space on the EEPROM as it was.
 
 ## Air Pumps
-During the early stages I tried multiple types of systems from Deep Water Culture to NFT and in the end settles for Deep Water Culture, I was originally using a really small air pump and noticed that the plants were lagging in something, especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on temperature, so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
+During the early stages I tried multiple types of systems from Deep Water Culture to NFT and in the end, settles for Deep Water Culture, I was originally using a really small air pump and noticed that the plants were lagging in something, especially in the summer months when the water temperature is close to 23degrees centigrade, I soon learned that the oxygen levels in the water drop depending on temperature, so I went for the Eheim 400 air pump its fantastic, quiet and powerful enough for this application.
 
 ## Growroom tools:
 My tools of choice when it comes to making nutrient solution:
@@ -184,11 +182,10 @@ These features may be included in future releases of this application.
 
 ## Bugs & ongoing fixes
 * The rotary encoder can be laggy and need quite a few revolutions to get get to where the user needs to be in the menu.
-* The water temp sensors are cheap and there output is erratic this can cause the heater pad relays to chatter if the target temperature is close. To get around this I have added if statments to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future releases I will get better quality sensors.
-
+* The water temp sensors are cheap and their output is erratic this can cause the heater pad relays to chatter if the target temperature is close. To get around this I have added if statements to look to see if the temperature being read is equal to -127 (-127 meaning no output) in future releases I will get better quality sensors.
 
 ### Credits:
-I would like to thank my friend Cersnic Tebor for his help with this project.
+I would like to thank my friend Cersnic Tibor for his help with this project.
 
 The ideas for the menu system came from here 
 http://educ8s.tv/arduino-rotary-encoder-menu/
