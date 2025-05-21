@@ -3,6 +3,9 @@
  </h1>
  
 ## Hydroponics
+
+### I hold this project close to my heart, as it was my very first venture into coding, undertaken without any previous knowledge. The entire learning process, fueled by a book and Google, truly demonstrates how far I've advanced in my coding career from those initial steps to where I am today.
+
 I created this Hydroponics system out of my love of mixing technology with nature, the ability to harness the building blocks of life to create tasty food in my dining room. This project is a work in progress but I am proud of the evolution of it.
 
 The heart of the system is an Arduino Uno, connected to a real-time clock module, an LCD display and a rotary encoder. The Arduino controls lighting cycles, monitors water temperatures turning heat mats on if the water temperature is below its designated temperature. Whilst also keeping an eye on the time in case watering intervals have been reached and turning on pumps as necessary. The system can handle NFT and Ebb and flow style systems. During the creation of the system, I have made it able to have 2 tents with 2 individual lights that can be set to their own time cycles. The incorporation of a menu system and using EEprom to save settings was also implemented at this time.
